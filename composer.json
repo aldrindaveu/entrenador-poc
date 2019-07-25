@@ -1,0 +1,26 @@
+{
+    "name": "indra/entrenador-poc",
+    "description": "The POC for the Entrenador app",
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": "^7.3.6"
+    },
+    "authors": [
+        {
+            "name" : "Aldrin Dave S. Casorla",
+            "email" : "adcasorla@indracompany.com",
+            "role" : "Developer"
+        },
+        {
+            "name" : "Piolo Sales",
+            "email" : "psales@indracompany.com",
+            "role" : "Developer"
+        },
+        {
+            "name" : "John Romasanta",
+            "email" : "jromasanta@indracompany.com",
+            "role" : "Team Leader"
+        }
+    ]
+}

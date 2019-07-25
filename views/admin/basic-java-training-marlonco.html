@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Basic Java Training | Entrenador</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-- Font Awesome -->
+         <link rel="stylesheet" href="../../assets/plugins/fontawesome-free/css/all.min.css">
+         <!-- Ionicons -->
+         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+         <!-- Theme style -->
+         <link rel="stylesheet" href="../../assets/dist/css/adminlte.css">
+         <!-- overlayScrollbars -->
+         <link rel="stylesheet" href="../../assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+         <!-- DataTables -->
+         <link rel="stylesheet" href="../../assets/plugins/datatables/dataTables.bootstrap4.css">
+         <!-- SweetAlert2 -->
+         <link rel="stylesheet" href="../../assets/plugins/sweetalert2/sweetalert2.min.css">
+         <!-- Toastr -->
+         <link rel="stylesheet" href="../../assets/plugins/toastr/toastr.min.css">
+         <!-- Select2 -->
+        <link rel="stylesheet" href="../../assets/plugins/select2/css/select2.min.css">
+         <!-- BOOTSTRAP 4.3.1 -->
+         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+         <!--  -->
+         <link rel="stylesheet" href="../../styles.css" type="text/css">
+
+        <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    </head>
+    <body class="hold-transition sidebar-mini layout-fixed">
+        <!-- TOP NAVBAR -->
+        <!-- TOP NAVBAR -->
+        <div id="side-and-top-nav"></div>
+        <!-- END OF SIDE NAVBAR -->
+        <!-- END OF SIDE NAVBAR -->
+
+        <!-- PAGE MAIN CONTENT -->
+        <div class="content-wrapper">
+            <!--Content Header (Page Header) -->
+            <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark page-title">Trainings</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item">Maintenance</li>
+                        <li class="breadcrumb-item">Trainings</li>
+                        <li class="breadcrumb-item"><a href="courses.html">Courses</a></li>
+                        <li class="breadcrumb-item"><a href="training-basic-java-trainings.html">Basic Java Trainings</a></li>
+                    </ol>
+                </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+
+            <!-- Main content-->
+            <section class="content">
+                    <div class="container-fluid">
+                        <!-- Main row -->
+                        <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header bg-azul-dark" style="border-left: 10px solid #ffa100; border-bottom: 0;">
+                                    <h3 class="text-white noe-display">Basic Java Training Attendees</h3>
+                                    <p class="text-white neo-sans-light">(Internal - Classroom)</p>
+                                    <p class="text-white neo-sans-light"><span class="neo-sans">Trainer: </span>Marlon Co</p>
+                                    <p class="text-white neo-sans-light"><span class="neo-sans">Date: </span>06/11/2019 - 06/14/2019</p>
+                                    <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#add-attendee">Add Attendee</button>
+                                    <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#upload-attendees">Upload Attendees</button>
+                                </div>
+                                <!--/.card-header-->
+                                <div class="card-body">
+                                <table id="basic-java-training-attendees-table" class="table table-bordered table-striped">
+                                    <thead>
+                                    <tr>
+                                      <th>Employee ID</th>
+                                      <th>Name</th>
+                                      <th>Current Project Assignment</th>
+                                      <th>Action</th>                 
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td>EMP-0001</td>
+                                        <td>John Romasanta</td>
+                                        <td>TGP-Java</td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning swalDelete">Remove</button>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>EMP-0002</td>
+                                        <td>Aldrin Dave Casorla</td>
+                                        <td>TGP-Java</td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning swalDelete">Remove</button>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>EMP-0003</td>
+                                        <td>Lorvanleopol Caburnay</td>
+                                        <td>MNTC</td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning swalDelete">Remove</button>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>EMP-0004</td>
+                                        <td>Crisaldo Santos Jr.</td>
+                                        <td>MNTC</td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning swalDelete">Remove</button>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>EMP-0005</td>
+                                        <td>Piolo Sales</td>
+                                        <td>TGP-Java</td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning swalDelete">Remove</button>
+                                        </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                    </div>
+                    </div>
+                    <!-- /.row (main row) -->
+                </div><!-- /.container-fluid -->
+                </section>
+                 <!-- /.content -->
+            </div>
+            <!-- END OF PAGE MAIN CONTENT -->
+
+        <!-- MODALS -->
+        <!-- 'ADD ATTENDEE' MODAL -->
+        <div class="modal fade " id="add-attendee">
+                <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header bg-azul-dark text-white">
+                    <h4 class="modal-title">Add Attendee</h4>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    <form role="form">
+                        <h5 class="neo-sans">Search employee:</h5>
+                        <div class="form-group">
+                            <select class="select2" multiple="multiple" data-placeholder="Select employee"
+                                style="width: 100%;">
+                                <option>John Romasanta</option>
+                                <option>Aldrin Dave Casorla</option>
+                                <option>Piolo Sales</option>
+                                <option>Lorvanleopol Caburnay</option>
+                                <option>Crisaldo Santos</option>
+                                <option>Cristina Jane Inosanto</option>
+                                <option>Margeux Kirsten Gonzaga</option>
+                            </select>
+                        </div>
+                                <!-- /.form-group -->
+                    </form>
+                    </div>
+                    <div class="modal-footer justify-content-between" style="border-bottom: 4px solid #ffa100">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-azul-dark swalConfrimAdd" data-dismiss="modal">Add</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- END OF 'NEW CLUSTER' MODAL -->
+
+            <!-- 'BATCH UPLOAD' MODAL -->
+        <div class="modal fade" id="upload-attendees">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-azul-dark text-white">
+                    <h4 class="modal-title">Upload Attendees</h4>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="exampleInputFile">File input</label>
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="exampleInputFile">
+                                    <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                                </div>
+                            </div>
+                            </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer justify-content-between" style="border-bottom: 4px solid #ffa100">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-azul-dark swalConfrimUpload" data-dismiss="modal">Save</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- END OF 'BATCH UPLOAD' MODAL -->
+        <!-- END OF MODALS -->
+         <!-- FOOTER -->
+        <footer class="main-footer">
+            <strong>Copyright &copy; 2019 <a href="https://indracompany.com">www.indracompany.com</a>.</strong>
+            All rights reserved.
+            <div class="float-right d-none d-sm-inline-block">
+                <b>Version</b> 1.0.0
+            </div>
+        </footer>
+        <!-- END OF FOOTER -->
+        
+        <!-- SCRIPTS -->
+        <!-- INCLUDE THE NAVBAR AND SET THE NAV ITEM TO ACTIVE -->
+        <script src="navbar.js"></script>
+        <script>
+            document.getElementById("side-and-top-nav").innerHTML = NAV_BAR;
+            document.getElementById("trainings-treeview").classList.add("menu-open");
+            document.getElementById("trainings-main-nav-link").classList.add("active");
+            document.getElementById("trainings-training-records").classList.add("active")
+            
+        </script>
+        <!-- jQuery -->
+        <script src="../../assets/plugins/jquery/jquery.min.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="../../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- DataTables -->
+        <script src="../../assets/plugins/datatables/jquery.dataTables.js"></script>
+        <script src="../../assets/plugins/datatables/dataTables.bootstrap4.js"></script>
+        <!-- FastClick -->
+        <script src="../../assets/plugins/fastclick/fastclick.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../../assets/dist/js/adminlte.min.js"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="../../assets/dist/js/demo.js"></script>
+        <!-- Select2 -->
+        <script src="../../assets/plugins/select2/js/select2.full.min.js"></script>
+        <!-- SweetAlert2 -->
+        <script src="../../assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+        <!-- Toastr -->
+        <script src="../../assets/plugins/toastr/toastr.min.js"></script>
+        <script>
+    
+        $(function () {
+            $('.select2').select2()
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000
+            });
+            $("#basic-java-training-attendees-table").DataTable({
+                "pageLength": 5,
+                "lengthMenu": [5, 10, 15, 20],
+            });
+            $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            });
+            $('.swalSuccessAdd').click(function() {
+            Toast.fire({
+                    type: 'success',
+                    title: 'Successfully added a new course.'
+                })
+            });
+            $('.swalSuccessUpdate').click(function() {
+            Toast.fire({
+                    type: 'success',
+                    title: 'Successfully updated course.'
+                })
+            });
+            $('.swalConfrimAdd').click(function(){
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes'
+                }).then((result) => {
+                if (result.value) {
+                    Swal.fire(
+                    'Added!',
+                    'Employee/s added to training.',
+                    'success'
+                    )
+                }
+                })
+            });
+            $('.swalConfrimUpload').click(function(){
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes'
+                }).then((result) => {
+                if (result.value) {
+                    Swal.fire(
+                    'Added!',
+                    'Employee/s added to training.',
+                    'success'
+                    )
+                }
+                })
+            });
+        });
+        </script>
+    </body>
+</html>

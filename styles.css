@@ -1,0 +1,449 @@
+/* You can add global styles to this file, and also import other style files */
+.bg-black{
+    background-color: black;
+}
+
+ /* F O N T S */
+@font-face {
+    font-family: Poppins-Black;
+    src: url(assets/fonts/Poppins/Poppins-Black.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(assets/fonts/Poppins/Poppins-Bold.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(assets/fonts/Poppins/Poppins-Regular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Montserrat-Black;
+    src: url(assets/fonts/Montserrat/Montserrat-Black.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(assets/fonts/Montserrat/Montserrat-Regular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Literata;
+    src: url(assets/fonts/Literata/Literata.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: Noe-Display;
+    src: url(assets/fonts/NoeDisplay/NoeDisplay-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: NeoSans-Light;
+    src: url(assets/fonts/NeoSans/neo-sans-light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: NeoSans;
+    src: url(assets/fonts/NeoSans/NeoSans.otf) format("opentype");
+}
+
+@font-face {
+    font-family: NeoSans-Medium;
+    src: url(assets/fonts/NeoSans/NeoSans-Medium.otf) format("opentype");
+}
+
+/* html, body{
+    font-family: Noe-Display !important;
+} */
+
+ html, body{
+    font-family: NeoSans-Light !important;
+}
+
+table > * {
+    font-family: NeoSans-Light !important;
+    font-weight: bold;
+    
+}
+/* 
+th {
+    font-family: NeoSans;
+} */
+
+ /* B A C K G R O U N D */
+ .text-transparent{
+    color: transparent !important;
+    padding: 0;
+    margin: 0;
+
+ }
+
+.bg-naranja{
+    background-color: #fbbb21;
+}
+
+.bg-gris{
+    background-color: #e8e8e8;
+}
+
+.bg-azul{
+    background-color: #03657c;
+}
+
+.bg-azul-dark{
+    background-color: #004254;
+}
+
+.bg-magenta{
+    background-color: #e21776;
+}
+
+.bg-verde{
+    background-color: #c3cd05;
+}
+
+.text-naranja{
+    color: #fbbb21;
+}
+
+.text-gris{
+    color: #e8e8e8;
+}
+
+.text-azul{
+    color: #03657c;
+}
+
+.text-azul-dark{
+    color: #004254;
+}
+
+.text-magenta{
+    color: #e21776;
+}
+
+.text-verde{
+    color: #c3cd05;
+}
+
+/* T E X T  F O R M A T T I N G */
+.center{
+    text-align: center !important;
+}
+
+.page-title{
+    font-family: NeoSans-Medium;
+}
+
+.noe-display{
+    font-family: Noe-Display;
+}
+
+.neo-sans-medium{
+    font-family: NeoSans-Medium;
+}
+
+.neo-sans{
+    font-family: NeoSans;
+}
+
+.neo-sans-light{
+    font-family: NeoSans-Light;
+}
+
+.poppins-black{
+    font-family: Noe-Display;
+}
+
+.poppins-bold{
+    font-family: Poppins-Bold;
+}
+
+.poppins-regular{
+    font-family: Poppins-Regular;
+}
+
+.montserrat-black{
+    font-family: Montserrat-Black;
+}
+
+.montserrat{
+    font-family: Montserrat;
+}
+
+.georgia{
+    font-family: Georgia;
+}
+
+.literata{
+    font-family: Literata;
+}
+
+.text-black{
+    color:black;
+}
+
+.text-light{
+    color: white;
+}
+
+.f-36{
+    font-size: 50pt;
+}
+
+ /* B U T T O N S */
+.action-btn-azul{
+    background-color: #004254;
+    color: white;
+}
+
+.action-btn-azul:hover{
+    background-color: #004254;
+    color: white;
+    cursor: default;
+}
+
+.btn-azul-dark{
+    background-color: #004254;
+    color: white;
+}
+
+.btn-azul-dark:hover{
+    background-color: #00b0ca;
+    color: white;
+}
+
+.btn-naranja{
+    background-color: #fbbb21;
+    color: black;
+}
+
+.btn-naranja:hover{
+    background-color: #d19509;
+    color: black;
+}
+
+.btn-outline-azul-dark{
+    border: 1px solid #004254;
+    color: #004254;
+    background-color: white;
+}
+
+.btn-outline-azul-dark:hover{
+    background-color: #004254;
+    color: white;
+}
+
+.btn-outline-magenta{
+    color: #e21776 !important;
+    background:rgb(243, 243, 243);
+    border: 1px solid #e21776 !important;
+}
+
+.btn-outline-magenta:hover{
+    color: white !important;
+    background-color: #e21776;
+}
+
+.btn-outline-naranja{
+    color: #83580f !important;
+    background: white;
+    border: 1px solid #ffa100 !important;
+}
+
+.btn-outline-naranja:hover{
+    color: black !important;
+    background-color: #ffa100;
+}
+
+#trainingCertificate{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;
+    display : block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#updateTrainingCertificate{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;
+    display : block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#trainingCertificateImageView{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;
+    display : block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#trainingCertificate:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#trainingCertificateImageView:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/* T A B L E   H E A D E R */
+th {
+    background-color: #004254;
+    color: white;
+}
+
+table, th, td, tr{
+    border: none !important;
+}
+/* 
+.bg-naranja{
+    background-color: #fbbb21;
+}
+
+.bg-gris{
+    background-color: #e8e8e8;
+}
+
+.bg-azul{
+    background-color: #03657c;
+}
+
+.bg-azul-dark{
+    background-color: #004254;
+}
+
+.bg-magenta{
+    background-color: #e21776;
+}
+
+.bg-verde{
+    background-color: #c3cd05;
+}
+
+.text-naranja{
+    color: #ffa100;
+} */
+
+/* G R I D   S Y S T E M  5   E Q U A L   C O L U M N S*/
+.col-2dot4,
+.col-sm-2dot4,
+.col-md-2dot4,
+.col-lg-2dot4,
+.col-xl-2dot4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-2dot4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+@media (min-width: 540px) {
+    .col-sm-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 720px) {
+    .col-md-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 960px) {
+    .col-lg-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 1140px) {
+    .col-xl-2dot4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+#trainingCertificate[src=""] {
+    display: none;
+}
+
+.circle-img-200{
+    max-width: 200px;
+    min-width: 200px;
+    border-radius: 100px;
+    padding: 3px
+}
+
+.circle-img-100{
+    max-width: 100px;
+    min-width: 100px;
+    border-radius: 50px;
+    padding: 3px;
+}
+
+.border-naranja{
+    border: 3px solid #fbbb21;
+}
+
+.border-azul-dark-5{
+    border: 5px solid #004254;
+}
+
+.training-name{
+    font-size: 14pt;
+    font-family: NeoSans;
+}
+
+.user-dp:hover{
+    cursor: pointer;
+}
+
+.user-dp > span{
+    position: absolute;
+    bottom: 45%;
+    /* left: 24%; */
+    font-size: 14pt;
+    background-color: #fbba2177;
+    width:200px;
+    text-align: center;
+     /* This timing applies on the way OUT */
+    transition-timing-function: ease-in-out;
+
+    /* Quick on the way out */
+    transition: 0.2s;
+    opacity: 0;
+}
+
+
+.numberField::-webkit-outer-spin-button,
+.numberField::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+.numberField[type=number] {
+    -moz-appearance:textfield; 
+}

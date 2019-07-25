@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Basic Java Training | Entrenador</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-- Font Awesome -->
+         <link rel="stylesheet" href="../../assets/plugins/fontawesome-free/css/all.min.css">
+         <!-- Ionicons -->
+         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+         <!-- Theme style -->
+         <link rel="stylesheet" href="../../assets/dist/css/adminlte.css">
+         <!-- overlayScrollbars -->
+         <link rel="stylesheet" href="../../assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+         <!-- DataTables -->
+         <link rel="stylesheet" href="../../assets/plugins/datatables/dataTables.bootstrap4.css">
+         <!-- SweetAlert2 -->
+         <link rel="stylesheet" href="../../assets/plugins/sweetalert2/sweetalert2.min.css">
+         <!-- Toastr -->
+         <link rel="stylesheet" href="../../assets/plugins/toastr/toastr.min.css">
+         <!-- BOOTSTRAP 4.3.1 -->
+         <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+         <!--  -->
+         <link rel="stylesheet" href="../../styles.css" type="text/css">
+
+        <link rel="icon" type="image/x-icon" href="../../favicon.ico">
+    </head>
+
+    <body class="hold-transition sidebar-mini layout-fixed">
+        <!-- TOP NAVBAR -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light border-bottom">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            
+        </nav>
+        <!-- END OF TOP NAVBAR -->
+
+        <!-- SIDE NAVBAR -->
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4" style="height: 100%">
+            <!-- Brand Logo -->
+            <a href="dashboard.html" class="brand-link center">
+                <!-- <img src="../../assets/img/Logo_Negativo_.png" alt="AdminLTE Logo" style="height: 50px !important;">    -->
+                <span class="brand-text font-weight-light georgia text-white" style="border-left: 3px solid #ffa100; opacity: 1.0 !important; font-size: 20pt;">&nbsp;Entrenador</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="image">
+                <img src="../../assets/img/mami-piyur.jpg" class="img-circle elevation-2" alt="User Image">
+                </div>
+                <div class="info">
+                <a href="#" class="d-block">Mami Piyur Paw Parail</a>
+                </div>
+            </div>
+
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <!-- Add icons to the links using the .nav-icon class
+                    with font-awesome or any other icon font library -->
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            Dashboard
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-header">
+                    TRANSACTIONS
+                </li>
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon far fa-clipboard"></i>
+                        <p>
+                            Monitor Trainings
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="../../views/admin/training-records.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Training Records</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../views/validation-requests.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Validation Requests</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../views/deletion-requests.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Deletion Requests</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-header">MAINTENANCE</li>
+                <li class="nav-item has-treeview menu-open">
+                    <a href="#" class="nav-link active">
+                        <i class="nav-icon fas fa-chalkboard-teacher"></i>
+                        <p>
+                            Trainings
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="../../views/admin/types.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Types</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../views/admin/categories.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Categories</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../views/admin/courses.html" class="nav-link active">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Courses</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../views/admin/training-records.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Training Records</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-user"></i>
+                        <p>
+                            Users
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="../../views/admin/clusters.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Clusters</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../views/admin/employees.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Employees</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-header">Reports</li>
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-chart-line"></i>
+                        <p>
+                            Generate Reports
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="../../views/admin/employee-training.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Employee Training</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../views/admin/training-courses.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Training Course</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- END OF SIDE NAVBAR -->
+
+        <!-- PAGE MAIN CONTENT -->
+        <div class="content-wrapper">
+            <!--Content Header (Page Header) -->
+            <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark page-title">Trainings</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item">Maintenance</li>
+                        <li class="breadcrumb-item">Trainings</li>
+                        <li class="breadcrumb-item"><a href="courses.html">Courses</a></li>
+                        <li class="breadcrumb-item"><a href="training-basic-java-trainings.html">Basic Java Trainings</a></li>
+                    </ol>
+                </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+        <!-- Main content-->
+        <section class="content">
+                <div class="container-fluid">
+                    <!-- Main row -->
+                    <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header bg-azul-dark" style="border-left: 10px solid #ffa100; border-bottom: 0;">
+                                <h3 class="text-white noe-display">Basic Java Training Attendees</h3>
+                                <p class="text-white neo-sans-light">(Internal - Classroom)</p>
+                                <p class="text-white neo-sans-light"><span class="neo-sans">Date: </span>07/11/2018 - 07/14/2018</p>
+                                <p class="text-white neo-sans-light"><span class="neo-sans">Trainor: </span>Niza Juhani Ornales</p>
+                            </div>
+                            <!--/.card-header-->
+                            <div class="card-body">
+                            <table id="basic-java-training-attendees-table" class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                  <th>Employee ID</th>
+                                  <th>Name</th>
+                                  <th>Current Project Assignment</th>
+                                  <th>Action</th>                 
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td>EMP-0010</td>
+                                    <td>Joshua Rae Macaya</td>
+                                    <td>Air Asia</td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning swalDelete">Remove</button>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td>EMP-0012</td>
+                                    <td>Juliamar Soriano</td>
+                                    <td>Meralco-RES</td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning swalDelete">Remove</button>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td>EMP-0023</td>
+                                    <td>Harold Lemuel De Asis</td>
+                                    <td>Meralco</td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning swalDelete">Remove</button>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td>EMP-0034</td>
+                                    <td>Cristina Jane Inosanto</td>
+                                    <td>Manila Waters</td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning swalDelete">Remove</button>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td>EMP-0055</td>
+                                    <td>Margeux Gonzaga</td>
+                                    <td>Manila Waters</td>
+                                    <td>
+                                        <button type="button" class="btn btn-warning swalDelete">Remove</button>
+                                    </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                </div>
+                </div>
+                <!-- /.row (main row) -->
+            </div><!-- /.container-fluid -->
+            </section>
+             <!-- /.content -->
+        </div>
+        <!-- END OF PAGE MAIN CONTENT -->
+
+        <!-- MODALS -->
+
+        <!-- END OF MODALS -->
+         <!-- FOOTER -->
+        <footer class="main-footer">
+            <strong>Copyright &copy; 2019 <a href="https://indracompany.com">www.indracompany.com</a>.</strong>
+            All rights reserved.
+            <div class="float-right d-none d-sm-inline-block">
+                <b>Version</b> 1.0.0
+            </div>
+        </footer>
+        <!-- END OF FOOTER -->
+        
+        <!-- SCRIPTS -->
+        <!-- jQuery -->
+        <script src="../../assets/plugins/jquery/jquery.min.js"></script>
+        <!-- Bootstrap 4 -->
+        <script src="../../assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- DataTables -->
+        <script src="../../assets/plugins/datatables/jquery.dataTables.js"></script>
+        <script src="../../assets/plugins/datatables/dataTables.bootstrap4.js"></script>
+        <!-- FastClick -->
+        <script src="../../assets/plugins/fastclick/fastclick.js"></script>
+        <!-- AdminLTE App -->
+        <script src="../../assets/dist/js/adminlte.min.js"></script>
+        <!-- AdminLTE for demo purposes -->
+        <script src="../../assets/dist/js/demo.js"></script>
+        <!-- SweetAlert2 -->
+        <script src="../../assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+        <!-- Toastr -->
+        <script src="../../assets/plugins/toastr/toastr.min.js"></script>
+        <script>
+        $(function () {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000
+            });
+            $("#basic-java-training-attendees-table").DataTable({
+                "pageLength": 5,
+                "lengthMenu": [5, 10, 15, 20],
+            });
+            $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            });
+            $('.swalSuccessAdd').click(function() {
+            Toast.fire({
+                    type: 'success',
+                    title: 'Successfully added a new course.'
+                })
+            });
+            $('.swalSuccessUpdate').click(function() {
+            Toast.fire({
+                    type: 'success',
+                    title: 'Successfully updated course.'
+                })
+            });
+            $('.swalDelete').click(function(){
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: "You won't be able to revert this!",
+                    type: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, delete it!'
+                }).then((result) => {
+                if (result.value) {
+                    Swal.fire(
+                    'Deleted!',
+                    'An employee has been removed.',
+                    'success'
+                    )
+                }
+                })
+            });
+        });
+        </script>
+    </body>
+</html>
